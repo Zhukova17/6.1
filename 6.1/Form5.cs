@@ -22,9 +22,9 @@ namespace _6._1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string title = textBox1.Text;
-            string author = textBox2.Text;
-            string genre = textBox3.Text;
+            string title = titleTextBox.Text;
+            string author = authorTextBox.Text;
+            string genre = genreTextBox.Text;
 
             if (string.IsNullOrEmpty(title) || string.IsNullOrEmpty(author) || string.IsNullOrEmpty(genre))
             {
@@ -36,9 +36,9 @@ namespace _6._1
             books.Add(book);
             listBox1.Items.Add(book);
 
-            textBox1.Clear();
-            textBox2.Clear();
-            textBox3.Clear();
+            titleTextBox.Clear();
+            authorTextBox.Clear();
+            genreTextBox.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
