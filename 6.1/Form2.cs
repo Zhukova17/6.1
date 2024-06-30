@@ -21,16 +21,13 @@ namespace _6._1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Случайная ситуация
-            int situation = random.Next(3); // Генерируем 0, 1 или 2
+            int situation = random.Next(3);
 
             switch (situation)
             {
                 case 0:
-                    // Книга доступна
                     MessageBox.Show("Поздравляем! Книга доступна для взятия.");
                     break;
-                    Close();
                 case 1:
                     MessageBox.Show("К сожалению, эта книга сейчас временно недоступна. Выберите другую.");
                     break;
@@ -44,7 +41,6 @@ namespace _6._1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Случайная ситуация
             int situation = random.Next(2);
 
             switch (situation)
