@@ -20,13 +20,19 @@ namespace _6._1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            int situation = random.Next(2);
+            int situation = random.Next(4);
             switch (situation)
             {
                 case 0:
                     MessageBox.Show("К сожалению, читальный зал сейчас на ремонте. Попробуйте другой зал.");
                     break;
-                case 1:                    
+                case 1:
+                    MessageBox.Show("Голуби, внезапно залетевшие в читальный зал и усевшиеся на стол, стали причиной срочной эвакуации.");
+                    break;
+                case 2:
+                    MessageBox.Show("В тишине читального зала, где все погружены в сон, звучит тревожный сигнал эвакуации из-за пожара.");
+                    break;
+                case 3:                    
                     DialogResult result = MessageBox.Show("В читальном зале идет интересное обсуждение новой книги. Хотите присоединиться?", "Присоединиться?", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
@@ -44,13 +50,19 @@ namespace _6._1
 
         private void button4_Click(object sender, EventArgs e)
         {
-            int situation = random.Next(2);
+            int situation = random.Next(4);
             switch (situation)
             {
                 case 0:
                     MessageBox.Show("К сожалению, ленивый зал сейчас на ремонте. Возвращайтесь позже, когда он будет готов.");
                     break;
                 case 1:
+                    MessageBox.Show("В библиотеку случайно забредает бродячая кошка, которая устраивает себе лежбище на стопке книг.");
+                    break;
+                case 2:
+                    MessageBox.Show("Внезапно отключили электричество, и все в зале уснули.");
+                    break;
+                case 3:
                     DialogResult result = MessageBox.Show("В ленивом зале кто-то уютно устроился с чашкой чая и книгой.Хотите присоединиться?", "Присоединиться?", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                     {

@@ -41,7 +41,7 @@ namespace _6._1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            int situation = random.Next(2);
+            int situation = random.Next(3);
 
             switch (situation)
             {
@@ -50,6 +50,9 @@ namespace _6._1
                     break;
                 case 1:                    
                     MessageBox.Show("К сожалению, все места заняты. Попробуйте позже.");
+                    break;
+                case 2:
+                    MessageBox.Show("К сожалению, свободных мест нет. Но вы можете попробовать присесть на пол. Это как медитация, только с книгами.");
                     break;
             }
         }
